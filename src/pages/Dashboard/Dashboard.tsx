@@ -1,7 +1,10 @@
+import SubHeader from "../../components/common/SubHeader/SubHeader";
 
 
 export default function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div>
+      <SubHeader />
+    </div>
   )
 }

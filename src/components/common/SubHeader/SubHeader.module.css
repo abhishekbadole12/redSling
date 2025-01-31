@@ -1,0 +1,13 @@
+.subHeader{
+ padding: 20px 30px;
+}
+
+.heading{
+ font-size: 1.65rem;
+ font-weight: 600;
+}   
+
+.subHeading{
+ font-size: 1rem;
+ font-weight: 400;
+}

@@ -1,8 +1,16 @@
 
 .cardImgContainer {
+  position: relative;
   height: 290px;
   border: 1px solid #ccc;
   border-radius: 8px;
+}
+
+/* Tag */
+.labelTag{
+  position: absolute;
+  right: .75rem;
+  top: .75rem;
 }
 
 .cardContent {
@@ -33,3 +41,4 @@
 .cardContent .cardLabel {
   font-weight: 600 !important;
 }
+

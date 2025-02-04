@@ -2,6 +2,7 @@ import CardStyles from "./Card.module.css";
 interface ItemProps {
   project_name: string;
   description: string;
+  createdOn:string;
   modifiedOn: string;
   category: string;
   author: string;
@@ -13,7 +14,7 @@ interface CardProps {
 }
 
 export default function Card({ item }: CardProps) {
-  const { project_name, description, author, modifiedOn } = item;
+  const { project_name, description, author, createdOn, modifiedOn } = item;
 
   return (
     <div className={CardStyles.card}>
@@ -26,7 +27,18 @@ export default function Card({ item }: CardProps) {
           <span className={CardStyles.cardLabel}>Author:</span> {author}
         </p>
         <p className={CardStyles.cardTime}>
-          <span className={CardStyles.cardLabel}>Date & Time : </span>
+          <span className={CardStyles.cardLabel}>Created On : </span>
+          {new Date(createdOn).toLocaleString("en-GB", {
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false,
+          })}
+        </p>
+        <p className={CardStyles.cardTime}>
+          <span className={CardStyles.cardLabel}>Modified On : </span>
           {new Date(modifiedOn).toLocaleString("en-GB", {
             day: "2-digit",
             month: "2-digit",
@@ -35,7 +47,7 @@ export default function Card({ item }: CardProps) {
             minute: "2-digit",
             hour12: false,
           })}
-        </p>{" "}
+        </p>
       </div>
     </div>
   );

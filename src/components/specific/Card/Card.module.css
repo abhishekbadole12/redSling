@@ -32,6 +32,6 @@
   color: #121212;
 }
 
-.cardAuthor.cardLabel{
+.cardContent .cardLabel {
   font-weight: 600 !important;
 }

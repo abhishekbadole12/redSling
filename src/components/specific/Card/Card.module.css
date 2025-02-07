@@ -1,16 +1,20 @@
-
 .cardImgContainer {
   position: relative;
   height: 290px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 /* Tag */
-.labelTag{
+.labelTag {
   position: absolute;
-  right: .75rem;
-  top: .75rem;
+  right: 0.75rem;
+  top: 0.75rem;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
 }
 
 .cardContent {
@@ -18,9 +22,10 @@
 }
 
 .cardContent > p {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
+/* Responsive typography */
 .cardTitle {
   font-size: 1.2rem;
   font-weight: 600;
@@ -42,3 +47,46 @@
   font-weight: 600 !important;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cardImgContainer {
+    height: 240px;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardDescription {
+    font-size: 0.95rem;
+  }
+
+  .cardTime,
+  .cardAuthor {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardImgContainer {
+    height: 200px;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+
+  .cardDescription {
+    font-size: 0.9rem;
+  }
+
+  .cardTime,
+  .cardAuthor {
+    font-size: 0.75rem;
+  }
+
+  .labelTag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+  }
+}

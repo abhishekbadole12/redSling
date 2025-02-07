@@ -4,6 +4,29 @@
 
 .cardContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(465px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  gap: 2.5rem;
+}
+
+/* ipad */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .cardContainer {
+    gap: 1.5rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .cardContainer {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 1rem;
+  }
 }

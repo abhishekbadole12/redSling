@@ -1,14 +1,15 @@
 .label {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 6px 10px;
   border-radius: 8px;
   border: 1px solid;
   text-align: center;
-  
+  backdrop-filter: blur(4px);
 }
 
 .labelText {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
+  
 }
 

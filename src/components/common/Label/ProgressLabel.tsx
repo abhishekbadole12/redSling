@@ -19,7 +19,7 @@ export default function ProgressLabel({
 
   return (
     <div className={ProgressLabelStyles.label} style={Styles[variant]}>
-      <p className={ProgressLabelStyles.labelText}>{text}</p>
+      <p className={ProgressLabelStyles.labelText} style={{textTransform:"capitalize"}}>{text}</p>
     </div>
   );
 }

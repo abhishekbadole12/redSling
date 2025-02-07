@@ -1,5 +1,7 @@
 import ProgressLabel from "../../common/Label/ProgressLabel";
 import CardStyles from "./Card.module.css";
+import CardImg from "../../../assets/images/project-page.png";
+
 interface ItemProps {
   project_name: string;
   description: string;
@@ -16,16 +18,17 @@ interface CardProps {
 
 // STATUS = LIVE | DEVELOPEMENT | STAGGING
 
-
-
 export default function Card({ item }: CardProps) {
   const { project_name, description, author, createdOn, modifiedOn } = item;
 
   return (
     <div className={CardStyles.card}>
-      <div className={CardStyles.cardImgContainer}>
+      <div
+        className={CardStyles.cardImgContainer}
+        style={{ backgroundImage: `url(${CardImg})` }}
+      >
         <div className={CardStyles.labelTag}>
-          <ProgressLabel text="Success" variant="warning" />
+          <ProgressLabel text="STAGGING" variant="warning" />
         </div>
       </div>
 

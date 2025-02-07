@@ -4,17 +4,21 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.05); /* Dark overlay */
+  background-blend-mode: multiply;
 }
 
 /* Tag */
 .labelTag {
   position: absolute;
-  right: 0.75rem;
-  top: 0.75rem;
+  right: 0.55rem;
+  top: 0.55rem;
   color: white;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
-  font-size: 0.85rem;
+  /* font-size: 0.75rem; */
 }
 
 .cardContent {

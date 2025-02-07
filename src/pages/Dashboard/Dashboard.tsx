@@ -1,4 +1,4 @@
-// import Filter from "../../components/common/Filter/Filter";
+import Filter from "../../components/common/Filter/Filter";
 import SubHeader from "../../components/common/SubHeader/SubHeader";
 import Card from "../../components/specific/Card/Card";
 import { api_data } from "../../utils/constant";
@@ -8,7 +8,7 @@ export default function Dashboard() {
   return (
     <div className={DashboardStyle.container}>
       <SubHeader />
-      {/* <Filter /> */}
+      <Filter />
       <div className={DashboardStyle.cardContainer}>
         {api_data.map((item) => (
           <Card key={item.id} item={item} />

@@ -5,7 +5,7 @@ export default function Filter() {
     <div className={FilterStyles.filterContainer}>
       {/* Search */}
       <div className={FilterStyles.inputContainer}>
-        <p className={FilterStyles.searchTitle}>Search Project : </p>
+        <p className={FilterStyles.searchTitle}>SEARCH PROJECT : </p>
         <input type="text" placeholder="enter to search" />
       </div>
 
@@ -17,7 +17,10 @@ export default function Filter() {
         </select>
 
         {/* icons for grid/list display */}
-        <div></div>
+        <div className={FilterStyles.listGrid}>
+          <div/>
+          <div/>
+        </div>
       </div>
     </div>
   );

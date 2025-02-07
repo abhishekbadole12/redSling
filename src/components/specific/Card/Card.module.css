@@ -6,7 +6,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.05); /* Dark overlay */
+  /* background-color: rgba(0, 0, 0, 0.05); Dark overlay */
   background-blend-mode: multiply;
 }
 
